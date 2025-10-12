@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url(FONTS/montserrat\ full\ version/montserrat-medium.otf);
+}
+
+.text-body{
+    font-family: montserrat-medium;
+    font-size: 16pt;
+    
+}
+
+.text-small{
+    font-family: montserrat-medium;
+    font-size: 11pt;
+}
