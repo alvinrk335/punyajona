@@ -271,6 +271,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-inline: 40px;
   position: relative;
   max-width: 62.5rem;
   width: 90%;
@@ -522,7 +523,7 @@
     padding: 0;
   }
   .about {
-    padding: 3.125rem 1.25rem;
+    padding: 3.125rem 0;
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -542,7 +543,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-inline: 1.25rem;
+    margin-inline: 0;
     justify-content: start;
     flex-wrap: wrap;
     height: 100%;
@@ -615,6 +616,7 @@
 
   .left-section {
     padding-right: 0;
+    margin: 0;
     justify-content: start;
     margin-bottom: 1.875rem;
     flex-wrap: wrap;
