@@ -16,6 +16,11 @@
     <!-- Manggil eksternal CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     <link rel="icon" type="image/x-icon" href="IMG/navbar_icon-03.ico">
+
 </head>
 
 
@@ -47,7 +52,7 @@
             <a class="nav-link" href="#carouselExampleAutoplaying">home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about me">About</a>
+            <a class="nav-link" href="#about-me">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
@@ -77,10 +82,10 @@
       <img src="IMG/1 CAROUSEL/1 3D Art Milky Way-01.jpg" class="d-block w-100" alt="3D Art_Milky Way">
     </div>
     <div class="carousel-item">
-      <img src="IMG/1 CAROUSEL/1 Fauna-01.jpg" class="d-block w-100" alt="...">
+      <img src="IMG/1 CAROUSEL/1 Fauna-01.jpg" class="d-block w-100" alt="Fauna">
     </div>
     <div class="carousel-item">
-      <img src="IMG/1 CAROUSEL/1 Explainer-01.jpg" class="d-block w-100" alt="...">
+      <img src="IMG/1 CAROUSEL/1 Explainer-01.jpg" class="d-block w-100" alt="Explainer">
     </div>
   </div>
 
@@ -104,8 +109,8 @@
 </div>
 
  <!-- Top Divider -->
-    <div class="blue-divider text-center py-3" id="about me">
-      <h3>안녕하세요.</h3>
+    <div class="blue-divider text-center py-3" id="about-me">
+      <h3 id="typed-text"></h3>
     </div>
 
 
@@ -117,10 +122,9 @@
   <div class="about-container" style="margin-inline: 40px;">
     
     <div class="photo-stack">
-      <img src="IMG/2 ABOUT ME/frame.png" class="frame" alt="photo frame">
-      <img src="IMG/2 ABOUT ME/photo.png" class="photo" alt="photo">
+      <img src="IMG/2 ABOUT ME/frame.png" class="frame" alt="photo frame" data-aos="fade-down" data-aos-duration="1000">
+      <img src="IMG/2 ABOUT ME/photo.png" class="photo" alt="photo" data-aos="fade-down" data-aos-duration="1000">
     </div>
-
     <div class="text-area">
       <img src="IMG/2 ABOUT ME/hello there.png" class="title-img" alt="hello there title">
       
@@ -148,7 +152,7 @@
 <!-- ABOUT ME - Details -->
 
 <section class="about-details">
-  <div class="container" style="margin-inline: 60px;">
+  <div class="container" id="container-about">
 
     <div class="row" style="margin-left: 70px; margin-right: 20px;">
       
@@ -181,7 +185,7 @@
       </div>
 
       <!-- Right Column -->
-      <div class="col-lg-6 col-md-12 right-section">
+      <div id="contact-upper" class="col-lg-6 col-md-12 right-section">
         <div class="skills">
           <img src="IMG/2 ABOUT ME/Subtitles/skills.png" alt="skills title" class="subtitle">
           <img src="IMG/2 ABOUT ME/skill.png" alt="skills box" class="skills-frame">
@@ -261,8 +265,8 @@
 
     <!-- ROW 1 -->
 
-    <div class="row justify-content-center" style="margin-bottom: 100px;">
-      <div class="col-md-4 col-12 project-item">
+    <div class="row justify-content-center" style="margin-bottom: 100px;" data-aos="fade-up" data-aos-duration="1200">
+      <div class="col-4 project-item">
         <div class="folder">
           <a href="#branding">
           <img src="IMG/3 PROJECTS/Folder Back/folder-back-branding.png" class="folder-back" alt="">
@@ -272,7 +276,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-12 project-item">
+      <div class="col-4 project-item">
         <div class="folder">
            <a href="#uiux">
           <img src="IMG/3 PROJECTS/Folder Back/folder-back-uiux.png" class="folder-back" alt="">
@@ -282,7 +286,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-12 project-item">
+      <div class="col-4 project-item">
         <div class="folder">
            <a href="#illustration">
           <img src="IMG/3 PROJECTS/Folder Back/folder-back-illustration.png" class="folder-back" alt="">
@@ -294,9 +298,9 @@
     </div>
 
     <!-- ROW 2 -->
-    <div class="row justify-content-center" style="margin-top: 100px;">
+    <div class="row justify-content-center" style="margin-top: 100px;" data-aos="fade-up" data-aos-duration="1200">
 
-      <div class="col-md-4 col-12 project-item">
+      <div class="col-4 project-item">
         <div class="folder">
            <a href="#motion">
           <img src="IMG/3 PROJECTS/Folder Back/folder-back-motion.png" class="folder-back" alt="">
@@ -306,7 +310,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-12 project-item">
+      <div class="col-4 project-item">
         <div class="folder">
            <a href="#3dart">
           <img src="IMG/3 PROJECTS/Folder Back/folder-back-3dart.png" class="folder-back" alt="">
@@ -316,7 +320,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-12 project-item">
+      <div class="col-4 project-item">
         <div class="folder">
            <a href="#2dplatformer">
           <img src="IMG/3 PROJECTS/Folder Back/folder-back-2dgame.png" class="folder-back" alt="">
@@ -348,9 +352,9 @@
        style="
        position: absolute;
        right: -40px;
-       bottom: -60px;
+       bottom: 40px;
        width: 115px;
-       z-index: 1;
+       z-index: 3;
        pointer-events: none;
        "
        >
@@ -360,11 +364,10 @@
 
  </section>
 
-
     <!-- Divider -->
     <section>
 
-       <div class="blue-divider"></div>
+       <div class="blue-divider" style="z-index: 0;"></div>
 
     </section>
 
@@ -1023,7 +1026,7 @@
 
 <!-- FOOTER -------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-<footer class="footer-section" style="margin-top: 120px;">
+<footer id="footer" class="footer-section" style="margin-top: 120px;">
   <div class="container d-flex justify-content-between align-items-center flex-wrap">
     <!-- Left Side -->
     <div class="footer-left">
@@ -1181,6 +1184,30 @@ window.onclick = function(event) {
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
    <!-- tag script icon-icon dari fontawesome -->
     <script src="https://kit.fontawesome.com/ec97421dd0.js" crossorigin="anonymous"></script>
+   <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+     AOS.init();
+    </script>
+
+    <!-- typing -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+     var typed = new Typed("#typed-text", {
+     strings: ["Hello!", "안녕하세요.", "你好！", "こんにちは！", "Halo!", "Bonjour!"],
+     typeSpeed: 100,       // typing speed
+     backSpeed: 60,        // backspacing speed
+     backDelay: 1500,      // pause before deleting
+     startDelay: 500,      // delay before typing starts
+     loop: true            // keep looping infinitely
+     });
+    </script>
+
+
+
 
   </div>
 
